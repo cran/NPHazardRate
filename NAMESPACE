@@ -1,0 +1,18 @@
+#useDynLib(Compositional, .registration = TRUE)
+
+importFrom("stats", sd, quantile, rweibull, rlnorm, rchisq, rexp, dweibull, dlnorm, dchisq, dexp,
+                    pweibull, plnorm, pchisq, pexp, rbinom, rgeom,
+                    rpois, rnbinom,  dbinom, dgeom, dpois, dnbinom,
+                    pbinom, pgeom, ppois, pnbinom, dnorm, dunif, pnorm, punif, runif, bw.nrd,
+                    integrate)
+
+importFrom("utils", head, tail )
+
+importFrom("survival", survreg, Surv )
+
+
+exportPattern("^[[:alpha:]]+")
+
+exportPattern("^[^\\.]")
+
+
